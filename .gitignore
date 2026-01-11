@@ -5,12 +5,11 @@ __pycache__/
 
 # Node
 node_modules/
-dist/
 .next/
 
-# Env files
+# Environment
 .env
 
-# OS
-.DS_Store
-Thumbs.db
+# Build
+dist/
+build/
