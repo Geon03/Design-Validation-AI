@@ -2,12 +2,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';  // ✅ THIS LINE WAS MISSING
+import { AppModule } from './app.module';  
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  app.enableCors(); // allow frontend calls
+  app.enableCors(); 
 
   await app.listen(8000);
 }
